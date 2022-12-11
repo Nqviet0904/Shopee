@@ -1,0 +1,81 @@
+.header {
+  height: 120px;
+  background-image: linear-gradient(0, #fe6232, #f6412e);
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar--list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 4px;
+}
+.header__navbar--item {
+  position: relative;
+  min-height: 26px;
+  margin: 0 8px;
+}
+.header__navbar--item,
+.header__navbar-item-link {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 300;
+}
+.header__navbar--item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+.header__navbar--item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+  display: inline-flex;
+  text-align: center;
+}
+.header__navbar--item--strong {
+  font-weight: 500;
+}
+.header__navbar--item--separate::after {
+  content: "";
+  border-left: 1px solid #fb9086;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -9px;
+  width: 1px;
+  height: 16px;
+  /*  translateY(-50%) 50% là 50% của chính nó (50%của 16px) 8px  */
+  transform: translateY(-50%);
+}
+.header__navbar-icon-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.header__navbar-icon {
+  font-size: 1.8rem;
+  margin: 0 4px;
+}
+.header__navbar-title--no-pointer {
+  cursor: text;
+  color: var(--white-color);
+}
+/* Header QR code */
+.header__qr {
+  background-color: var(--white-color);
+  width: 186px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 8px;
+}
+.header__qr-img {
+  width: 100%;
+}
+.header__qr-apps {
+}
+.header__qr-download-img {
+}
