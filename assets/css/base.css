@@ -50,6 +50,10 @@ html {
   padding-right: 5px;
   width: 83.3334%;
 }
+.grid.wide {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /* Animation */
 @keyframes growth {
@@ -190,4 +194,102 @@ html {
 }
 .select-input__link:hover {
   color: var(--primary-color);
+}
+/*  Pagination */
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination-item{
+  margin: 0 12px;
+}
+.pagination-item__link{
+  --height: 30px;
+  display: block;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #939393;
+  min-width: 40px;
+  height: var(--height);
+  line-height: var(--height);
+  text-align: center;
+  border-radius: 2px;
+}
+.pagination-item--active .pagination-item__link {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.pagination-item--active .pagination-item__link:hover {
+  background-color: #ed5c3f;
+}
+.pagination-item__icon{
+
+}
+/* footer */
+.footer{
+  border-top: 4px solid var(--primary-color);
+  background-color: var(--white-color);
+}
+.footer__heading{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.footer-list{
+  padding-left: 0;
+  list-style: none;
+}
+.footer-item{
+
+}
+.footer-item__link{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #737373;
+  padding: 2px 0;
+  display: flex;
+  align-items: center;
+}
+.footer-item__link:hover{
+  color: var(--primary-color);
+}
+.footer-item__icon{
+  font-size: 1.6rem;
+  margin: -1px 8px 0 0;
+}
+.footer__download{
+  display: flex;
+}
+.footer__download-qr{
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--border-color);
+}
+.footer__download-app-link{
+  color: transparent;
+  text-decoration: none;
+}
+.footer__download-apps{
+  flex: 1;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__download-app-img{
+  height: 16px;
+}
+.footer__text{
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+}
+.footer__bottom{
+  padding: 8px 0;
+  background-color: #F5F5F5;
+  margin-top: 36px;
 }
